@@ -1,0 +1,57 @@
+.profile {
+    width: 250px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.name {
+    font-size: 20px;
+    color: black;
+
+}
+
+.description {
+    display: block;
+    margin: 0;
+    padding: 2px 0px;
+    text-align: center
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px 100px 100px 100px;
+    margin: 0px;
+}
+
+.stats {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    padding: 18.2px;
+    border-top: grey 1px solid;
+    background-color: bisque;
+}
+
+li:nth-last-of-type(even) {
+    border-left: grey 1px solid;
+    border-right: grey 1px solid;
+}
+
+li:nth-last-of-type(1) {
+    border-radius: 0px 0px 5px 0px;
+}
+
+li:nth-last-of-type(3) {
+    border-radius: 0px 0px 0px 5px;
+}
