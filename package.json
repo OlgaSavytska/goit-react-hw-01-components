@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^2.1.1",
+    "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
@@ -18,7 +19,6 @@
     "lint:format": "prettier src/**/*.{js,css,json} --write",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "eslintConfig": {
     "extends": "react-app"

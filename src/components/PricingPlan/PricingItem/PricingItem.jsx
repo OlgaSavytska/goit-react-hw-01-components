@@ -3,35 +3,33 @@ import PropTypes from 'prop-types';
 import styles from './PricingItem.module.css';
 
 const PricingItem = ({ el }) => {
-    const { label, icon, capacity, description, price } = el;
-    return (
-        <li className={styles.pricingItem}>
-            <img src={icon} className={styles.icon} alt="" />
-            <h2 className={styles.label}>
-                {label}
-            </h2>
-            <p className={styles.capacity}>{capacity}</p>
-            <p className={styles.description}>{description}</p>
-            <p className={styles.price}>${price}/MO</p>
-            <button type="button" className={styles.button}
-            > Get Started</button>
-        </li>
-    );
+  const { label, icon, capacity, description, price } = el;
+  return (
+    <li className={styles.pricingItem}>
+      <img src={icon} className={styles.icon} alt="" />
+      <h2 className={styles.label}>{label}</h2>
+      <p className={styles.capacity}>{capacity}</p>
+      <p className={styles.description}>{description}</p>
+      <p className={styles.price}>${price}/MO</p>
+      <button type="button" className={styles.button}>
+        {' '}
+        Get Started
+      </button>
+    </li>
+  );
 };
 
 PricingItem.propTypes = {
-    el: PropTypes.shape({
-        label: PropTypes.string.isRequired,
-        icon: PropTypes.string.isRequired,
-        capacity: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
-        price: PropTypes.number.isRequired,
-    }).isRequired,
+  el: PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    capacity: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default PricingItem;
-
-
 
 // const PricingItem = ({ items }) => (
 //     items.map(item => (
